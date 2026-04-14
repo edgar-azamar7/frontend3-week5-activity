@@ -30,7 +30,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #1a1a1a;
+  background-color: #2a2a2a;
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -69,11 +69,11 @@ body {
 .game-card {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #2a2a2a;
   border-radius: 12px;
   overflow: hidden;
   text-decoration: none;
-  color: #333;
+  color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition:
     transform 0.2s ease,
@@ -119,4 +119,126 @@ body {
 
 .error-text {
   color: #dc2626;
+}
+
+/* ==========================================
+   Contenedores Principales
+   ========================================== */
+.details-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--text-main);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* ==========================================
+   Diseño de la Tarjeta (CSS Grid)
+   ========================================== */
+.game-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas simétricas en escritorio */
+  gap: 3rem;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.details-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Evita que la imagen se deforme */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================
+   Información del Juego
+   ========================================== */
+.details-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+}
+
+.details-info h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.category-badge {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  /* Si la descripción de la API es muy larga, esto le pone una barra de scroll interna */
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Estilo personalizado para el scroll de la descripción */
+.description::-webkit-scrollbar {
+  width: 6px;
+}
+.description::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* ==========================================
+   Botón de Acción
+   ========================================== */
+.add-to-cart-btn {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition:
+    transform 0.2s ease,
+    background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart-btn:hover {
+  transform: translateY(-2px);
+}
+
+.add-to-cart-btn:active {
+  transform: translateY(0);
 }

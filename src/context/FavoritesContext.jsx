@@ -16,12 +16,12 @@ export const FavoritesProvider = ({ children }) => {
       return;
     }
 
-    alert('¡Juego agregado a favoritos ❤️!');
+    alert('¡Juego agregado a favoritos!');
     setFavorites([...favorites, product]);
   };
 
   const clearFavorites = () => {
-    alert('¡Lista de favoritos vaciada 💔!');
+    alert('¡Lista de favoritos vaciada!');
     setFavorites([]);
   };
 

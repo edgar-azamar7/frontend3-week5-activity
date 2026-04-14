@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/JosephRangel/frontend2-week4-activity/compare/v1.1.0...v1.1.1) (2026-04-14)
+
+
+### Bug Fixes
+
+* update favorite context file ([#4](https://github.com/JosephRangel/frontend2-week4-activity/issues/4)) ([4cd984c](https://github.com/JosephRangel/frontend2-week4-activity/commit/4cd984c3099a242344fe78209c09721e1556d564))
+
 # [1.1.0](https://github.com/JosephRangel/frontend2-week4-activity/compare/v1.0.0...v1.1.0) (2026-04-11)
 
 

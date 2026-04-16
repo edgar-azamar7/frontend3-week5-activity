@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/edgar-azamar7/frontend3-week5-activity/compare/v1.0.0...v1.0.1) (2026-04-16)
+
+
+### Bug Fixes
+
+* format code with prettier ([c1e6005](https://github.com/edgar-azamar7/frontend3-week5-activity/commit/c1e600510537778f23fde84de4631556eb8fab45))
+* remove duplicate docker-publish workflow ([c829964](https://github.com/edgar-azamar7/frontend3-week5-activity/commit/c829964f56e23eb35b3022df5c9e747c23f1bf1e))
+
 # 1.0.0 (2026-04-16)
 
 

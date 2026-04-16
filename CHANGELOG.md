@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/edgar-azamar7/frontend3-week5-activity/compare/v1.0.1...v1.1.0) (2026-04-16)
+
+
+### Features
+
+* add ProductCard component and useFavorites hook ([206b487](https://github.com/edgar-azamar7/frontend3-week5-activity/commit/206b4875dd1e750e6662e33682e0ef1fc74fb676))
+
 ## [1.0.1](https://github.com/edgar-azamar7/frontend3-week5-activity/compare/v1.0.0...v1.0.1) (2026-04-16)
 
 

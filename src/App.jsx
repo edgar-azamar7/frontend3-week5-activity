@@ -3,16 +3,22 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Favorites from './pages/Favorites';
 import GameDetails from './pages/GameDetails';
+import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/game/:id" element={<GameDetails />} />
-        <Route path="/favorites" element={<Favorites />} />
-      </Routes>
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product/:id" element={<GameDetails />} />
+          <Route path="/favorites" element={<Favorites />} />
+        </Routes>
+      </main>
+      <footer className="app-footer">
+        <p>&copy; 2026 TechStore - Todos los derechos reservados</p>
+      </footer>
     </div>
   );
 }

@@ -4,16 +4,20 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="nav-logo">
-        🎮 Gamepedia
+        💻 TechStore
       </Link>
 
       <div className="nav-links">
         <Link to="/" className="nav-link">
-          Inicio
+          Catálogo
         </Link>
         <Link to="/favorites" className="nav-link">
-          Mis Favoritos
+          Wishlist
         </Link>
+      </div>
+
+      <div className="nav-actions">
+        <button className="nav-button">Carrito (0)</button>
       </div>
     </nav>
   );
